@@ -1,22 +1,22 @@
 #### TXTR ############################################
 
 Txtr is a small SMS text adventure engine written in Python 2.7+. It uses an online application called Twilio to handle the SMS side of things. 
-It was originally built at the end of 2013 to run the game Cat Quest. It was later built out into an online application to run the game Sext Adventure. 
-This is the barebones local running non oline webby database version. <br />
+It was originally built at the end of 2013 to run the game Cat Quest. It was later built into an online application to run the game Sext Adventure. 
+This is the barebones local running non webby sans database version. <br />
 
-This is here AS IS. There is no guarantee its gonna work. But its pretty stable, so it should be mostly ok. 
+This is here AS IS. There might still be some snags. But it should be mostly ok. 
 
-### DOWNLOADS ###############################################
+### YAK SHAVING ###############################################
 
 You will need a Twilio Account: https://www.twilio.com/ <br />
 Download and Install ngrok:  https://ngrok.com/ <br />
 
-### Modules ###############################################
+### MODULES ###############################################
 
 Flask: pip install flask <br />
 Twilio for Python: pip install twilio <br />
 
-### SETUP AND RUNNING ###############################################
+### RUNNING ###############################################
 
 Note you should probably run this out of a virtual environemnt with Virtualenv. 
 
@@ -34,13 +34,13 @@ TWILIO_NUMBER = 'XXXXXXXXXXXXXX' <br />
 
 Things should be texting at this point.<br />
 
-### Contributors ####################################
+### CONTRIBUTORS ####################################
 
-Nadine Lessio - Initial concpet / programming (@_nadine)  <br />
-Jonathan Doda - Decorator Concept / Database / Further programming (@jondoda) <br />
-Angus Flecther - Debugging, Troubleshooting, Ops (@angusiguess) <br />
+Nadine Lessio - Initial Concpet / programming (@_nadine)  <br />
+Jonathan Doda - Decorator Concept / Database / Further Programming (@jondoda) <br />
+Angus Flecther - Debugging / Troubleshooting / Ops / High Fives (@angusiguess) <br />
 
-### Usage ####################################
+### USAGE ####################################
 
 You are free to use this for NON COMMERCIAL purposes. <br />
 But I would appreciate it if you could link back to here with a mention if you do use it. <br />
