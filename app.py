@@ -18,6 +18,7 @@ app.config.from_pyfile('keys.cfg')
 
 account_sid = app.config['TWIL_SID']
 auth_token = app.config['TWIL_TOKEN']
+twil_number = app.config['TWILIO_NUMBER']
 twilio_client = TwilioRestClient(account_sid, auth_token)
 
 ### save path ####################################################################
@@ -41,7 +42,7 @@ def accept_response():
     raw = request.values.get('Body') # get the body of the text message 
     body = re.sub(r'[^\w\s]','',raw) # strip all the punctuation out of the message.
 
-    g = game.Game(twilio_client, from_number, "+1647XXXXXXX", save_dir)
+    g = game.Game(twilio_client, from_number, twil_number, save_dir)
     g.take_action(body) # pass the body to the take action function
     g.save() # save this in a file
 

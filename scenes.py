@@ -93,12 +93,12 @@ class End(Scene):
 	def enter(self):
 		if self.game.state['end_location'] == "end_1":
 			self.send_sms("First Ending.")
-			self.send_mms(":3", media_url=["http://work.nadinelessio.com/twiliothings/cats_07/cat_recycle.jpg"])
+			self.send_mms(":3", media_url=["http://placekitten.com.s3.amazonaws.com/homepage-samples/408/287.jpg"])
 			self.enter_scene(Reload)
 
 		elif self.game.state['end_location'] == "end_2":
 			self.send_sms("Second Ending")
-			self.send_mms(":3", media_url=["http://work.nadinelessio.com/twiliothings/cats_07/cat_bed.jpg"])
+			self.send_mms(":3", media_url=["http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg"])
 			self.enter_scene(Reload)
 
 		else:
@@ -110,7 +110,7 @@ class Reload(Scene):
 
 	def enter(self):
 		#### Delay for a bit ########
-		time.sleep(8)
+		time.sleep(5)
 		self.game.state['end_location'] = "finished"
 		self.send_sms("Thanks for Playing! It might take a while for your ending image to show up (slow networks). If you'd like to play again, text AGAIN. Or you can QUIT to unsubscribe to this app.")
 		
