@@ -38,15 +38,15 @@ Things should be texting at this point.<br />
 
 Nadine Lessio - Initial Concpet / Programming / Swearing (@_nadine)  <br />
 Jonathan Doda - Decorator Concept / Database / Programming / Guidance (@jondoda) <br />
-Angus Flecther - Debugging / Troubleshooting / Ops / High Fives (@angusiguess) <br />
+Angus Fletcher - Debugging / Troubleshooting / Ops / High Fives (@angusiguess) <br />
 
 ### USAGE ####################################
 
-You are free to use this for NON COMMERCIAL purposes. <br />
-But I would appreciate it if you could link back to here with a mention if you do use it. <br />
-Also it would be awesome to see what you make with it!<br />
+You are free to use this for Non Commercial purposes. Or y'know...Skynet. If that's your bag. <br />
+BUT if you could link back to here with a mention if you do use it, that would be awesome. <br />
+Also it would be great to see what you make with it!<br />
 
 ## KNOWN ISSUES ####################################
-The timing for MMS is off / slow.
+The timing for MMS is off / slow. Like whoa...slow. </br />
 Sometimes an SMS will be dropped if one web API spins up slower than another (Eg if you're running off Heroku). Using something to ping it generally keeps it from happening. You'll still see an error in your logs, but it will just chug along like nothing is going on. 
 
