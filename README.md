@@ -1,6 +1,6 @@
 #### TXTR ############################################
 
-Txtr is a small SMS text adventure engine written in Python 2.7+. It uses an online application called Twillio to handle the SMS side of things. 
+Txtr is a small SMS text adventure engine written in Python 2.7+. It uses an online application called Twilio to handle the SMS side of things. 
 It was originally built at the end of 2013 to run the game Cat Quest. It was later built out into an online application to run the game Sext Adventure. 
 This is the barebones local running non postgres desktop version. It has a minimal web layer. <br />
 
@@ -8,14 +8,15 @@ This is here AS IS. There is no guarantee its gonna work. But its pretty stable,
 
 ### DOWNLOADS ###############################################
 
-You will need a Twillio Account: 
-Download and Install ngrok: 
+You will need a Twilio Account: https://www.twilio.com/ <br />
+Download and Install ngrok:  https://ngrok.com/ <br />
 
 ### SETUP AND RUNNING ###############################################
 
 1) Make your own keys.cfg file that will include your twilio account info / auth tokens<br />
 2) Follow the ngrok documentation to open a tunnel to the internets.<br />
 3) run the app.py out of your terminal<br />
+4) On the twilio end, make sure the URL handling your SMS is correct <br />
 
 Things should be texting at this point.<br />
 
