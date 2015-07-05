@@ -36,9 +36,9 @@ Things should be texting at this point.<br />
 
 ### Contributors ####################################
 
-Nadine Lessio - Initial concpet / programming  <br />
-Jon Doda - Decorator Concept / Database / Further programming <br />
-Angus Flecther - Debugging, Troubleshooting, Ops <br />
+Nadine Lessio - Initial concpet / programming (@_nadine)  <br />
+Jonathan Doda - Decorator Concept / Database / Further programming (@jondoda) <br />
+Angus Flecther - Debugging, Troubleshooting, Ops (@angusiguess) <br />
 
 ### Usage ####################################
 
