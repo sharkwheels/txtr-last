@@ -10,7 +10,7 @@ class Game():
         self.twilio = twilio
         self.from_number = from_number
         self.to_number = to_number
-        self.save_path = os.path.join(save_dir, '%s.save' % (self.to_number,))
+        self.save_path = os.path.join(save_dir, '%s.save' % (self.to_number,))  ## save this to a file on the drive. 
         
         if os.path.exists(self.save_path):
             self.state = json.load(open(self.save_path, 'rb'))

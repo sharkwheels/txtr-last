@@ -52,6 +52,11 @@ class Intro(Scene):
 
 ### Scene Examples ####################################################
 
+## To create a new scene, follow this template, make a new Scene / class. 
+## Any def w/ a decorator becomes an action word.
+## default will reload the scene if people don't choose one of the action words. 
+## you can have as many action words as you want in each scene. 
+
 class SceneOne(Scene):
 	
 	def enter(self):
@@ -81,11 +86,16 @@ class SceneTwo(Scene):
 
 	@action
 	def ending(self):
-		self.game.state['end_location'] = 'end_2'
+		self.game.state['end_location'] = 'end_2' # sets the ending location
 		self.enter_scene(End)
 
 	def default(self):
 		self.enter_scene(SceneTwo)
+
+
+## ENDING ##########################################################################################
+## just add an elif statement for each ending you have.
+## this gets bone ugly long if you have a lot, so keep that in mind. 
 
 
 class End(Scene):
@@ -105,6 +115,8 @@ class End(Scene):
 			pass
 
 
+## RELOAD ##########################################################################################
+## Just a way to have a thanks message and an option for restart. 
 
 class Reload(Scene):
 
