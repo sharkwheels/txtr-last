@@ -41,8 +41,11 @@ class Game():
         scene = scene_class(self)
 
         action_names = [name for name, _ in inspect.getmembers(scene_class, lambda m: hasattr(m, '_is_action') and m._is_action == True)]
+        
         # trace to log to make sure its getting them
+        
         print(action_names)
+
         #raise Exception(action_names)
         
         #find the first word that matches any word in the list and make it the action.

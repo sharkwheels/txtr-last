@@ -1,10 +1,12 @@
+### Modules ################################
+
 import sys, re
 from flask import Flask, request
 from twilio.rest import TwilioRestClient
 import twilio.twiml
 import game
 
-
+### App Config ########################################################################
 
 app = Flask(__name__)
 
@@ -18,11 +20,11 @@ account_sid = app.config['TWIL_SID']
 auth_token = app.config['TWIL_TOKEN']
 twilio_client = TwilioRestClient(account_sid, auth_token)
 
-### save path ###
+### save path ####################################################################
 
 save_dir = sys.path[0] 
 
-### App Views ###
+### App Views ####################################################################
 
 @app.route("/", methods=['GET','POST'])
 
@@ -39,7 +41,7 @@ def accept_response():
     raw = request.values.get('Body') # get the body of the text message 
     body = re.sub(r'[^\w\s]','',raw) # strip all the punctuation out of the message.
 
-    g = game.Game(twilio_client, from_number, "+16475575128", save_dir)
+    g = game.Game(twilio_client, from_number, "+1647XXXXXXX", save_dir)
     g.take_action(body) # pass the body to the take action function
     g.save() # save this in a file
 

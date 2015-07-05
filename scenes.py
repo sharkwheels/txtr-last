@@ -34,7 +34,7 @@ class Scene(object):
 		self.send_sms("Available actions are in ALL CAPS, ie: \"OFFICE\". QUIT will unsubscribe you. If there is a delay, sorry, sometimes the network sucks. Just be cool and hang for a bit.")
 	
 
-### this is the intro scene ###
+### this is the intro scene ####################################
 
 class Intro(Scene):
 
@@ -50,7 +50,7 @@ class Intro(Scene):
 
 
 
-### Scene Examples ###
+### Scene Examples ####################################################
 
 class SceneOne(Scene):
 	
@@ -109,9 +109,7 @@ class End(Scene):
 class Reload(Scene):
 
 	def enter(self):
-		# This needs a better solution to make a small delay to make sure the MMS gets sent
-		# 8 second delay
-		
+		#### Delay for a bit ########
 		time.sleep(8)
 		self.game.state['end_location'] = "finished"
 		self.send_sms("Thanks for Playing! It might take a while for your ending image to show up (slow networks). If you'd like to play again, text AGAIN. Or you can QUIT to unsubscribe to this app.")
